@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Selectors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://kit.fontawesome.com/fbf78ca96b.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="resources/plane-up-solid.svg">
 </head>
 
 <body>
@@ -17,11 +23,11 @@
         <p>We can divide CSS selectors into five categories:</p>
         <ul>
             <li>Simple selectors (select elements based on name, id, class)</li>
-            <li>Combinator selectors (select elements based on a specific relationship between them)</li>
-            <li>Pseudo-class selectors (select elements based on a certain state)
+            <li><a href="https://www.w3schools.com/css/css_combinators.asp">Combinator selectors</a>(select elements based on a specific relationship between them)</li>
+            <li><a href="https://www.w3schools.com/css/css_pseudo_classes.asp">Pseudo-class selectors </a>(select elements based on a certain state) 
             </li>
-            <li>Pseudo-elements selectors (select and style a part of an element)</li>
-            <li>Attribute selectors (select elements based on an attribute or attribute value)</li>
+            <li><a href="https://www.w3schools.com/css/css_pseudo_elements.asp">Pseudo-elements selectors</a>(select and style a part of an element)</li>
+            <li><a href="https://www.w3schools.com/css/css_attribute_selectors.asp">Attribute selectors</a> (select elements based on an attribute or attribute value)</li>
         </ul>
     </div>
     <hr>
@@ -53,10 +59,37 @@
         </div>
         <div>
             <h3>All CSS Simple Selectors</h3>
-            <img src="./resources/selectors.png" alt="">
         </div>
     </div>
 
 </body>
+
+<div id="table">
+
+<table rules="rows">
+    <tr>
+        <td><strong>Selector</strong></td><td><strong>Example</strong></td><td><strong>Example description</strong></td>
+    </tr>
+    <tr style="background-color:rgb(210, 210, 210) ;">
+        <td style="text-decoration: underline;"><em>#id</em></td><td>#firstname</td><td>Selects the element with id="firstname"</td>
+    </tr>
+    <tr>
+        <td style="text-decoration: underline ;"><em>.class</em></td><td>.intro</td><td>Selects all elements with class="intro"</td>
+    </tr>
+    <tr style="background-color:rgb(210, 210, 210) ;">
+        <td style="text-decoration:underline;"><em>element.class</em></td><td>p.intro</td><td>Selects only &lt;p&gt;</td>
+    </tr>
+    <tr>    
+        <td style="text-decoration:underline;"><em>*</em></td><td>*</td><td>Selects all elements</td>
+    </tr>
+    <tr style="background-color:rgb(210, 210, 210) ;">
+        <td style="text-decoration:underline;"><em>element</em></td><td>p</td><td>Selects all &lt;p&gt; elements</td>
+    </tr>
+    <tr>
+        <td style="text-decoration:underline ;"><em>element,element,..</em></td><td>div, p</td><td>Selects all &lt;div&gt; elements and all &lt;p&gt; elements</td>
+    </tr>
+</table>
+
+</div>
 
 </html>
